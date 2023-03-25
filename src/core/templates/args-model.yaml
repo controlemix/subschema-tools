@@ -1,0 +1,3 @@
+args-model:
+  argsType: 'const >>argsTypeName = { >>argType } '
+  modExp: '{ condition: (_, table, args) => { return require("subgraph-tools").conditionWhere(table, args) }, args: { ...>>argsTypeName, ...require("./forwardArgs").argsDefault.args } }'
